@@ -4,9 +4,9 @@ Dell announced an Ubuntu version of the 2026 XPS 14 (DA14260), sold it from June
 
 ## My take
 
-I've used Red Hat since 1995 and owned hundreds of computers. I know when they are supported, and this one isn't. I bought this XPS because Dell sold it as a certified Ubuntu laptop. It was a misleading purchase. That's my opinion. The rest of this page is the record.
+I've run Red Hat since 1995 and owned hundreds of computers. I know what support looks like, and this isn't it. I bought this XPS because Dell sold it as a certified Ubuntu laptop. That purchase was misleading. That's my opinion; the rest of this page is the record.
 
-It's on us Linux users to keep these clowns accountable.
+This is what keeps ordinary people off Linux. They buy the laptop that says "certified for Ubuntu", the basics break, and they blame Linux, not the vendor. Vendors count on Linux users to shrug and fix things ourselves. Holding them to what they sold is on us.
 
 Everything below is either a dated link or the output of a command run on my XPS 14 on 2026-10-30. Raw outputs are in [evidence/](evidence/).
 
