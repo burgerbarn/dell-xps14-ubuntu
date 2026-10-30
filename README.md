@@ -17,7 +17,7 @@ Everything below is either a dated link or the output of a command run on my XPS
 | 2026-06-02 | XPS 14 goes on sale with Ubuntu 24.04 preinstalled, from $1,900, $100 less than Windows | [Liliputing](https://liliputing.com/dell-xps-14-laptop-is-now-available-with-ubuntu-linux/) |
 | 2026-06-19 | Dell's configuration page `useda14260ucto01`: Ubuntu 24.04 LTS is the default OS, Windows 11 Home is a +$100 option, $1,899.99 | [Wayback capture](https://web.archive.org/web/20260619204610/https://www.dell.com/en-us/shop/dell-laptops/new-xps-14-laptop/spd/xps-da14260-laptop/useda14260ucto01) |
 | 2026-08-20 | Same page still offers Ubuntu 24.04 LTS, $1,939.99 | [Wayback capture](https://web.archive.org/web/20260820153426/https://www.dell.com/en-us/shop/dell-laptops/new-xps-14-laptop/spd/xps-da14260-laptop/useda14260ucto01) |
-| 2026-10-30 | Same page: Windows 11 Home only, no Ubuntu anywhere in the OS options, $1,989.99 | [Live page](https://www.dell.com/en-us/shop/dell-laptops/new-xps-14-laptop/spd/xps-da14260-laptop/useda14260ucto01), extract: [evidence/dell-ucto01-2026-10-30.txt](evidence/dell-ucto01-2026-10-30.txt) |
+| 2026-10-30 | Same page: Windows 11 Home only, no Ubuntu anywhere in the OS options, $1,989.99 | [Live page](https://www.dell.com/en-us/shop/dell-laptops/new-xps-14-laptop/spd/xps-da14260-laptop/useda14260ucto01), extract: [evidence/dell-ucto01-2026-10-30.txt](evidence/dell-ucto01-2026-10-30.txt). The Ubuntu configuration URL now redirects to the general XPS 14 page, which offers Windows 11 Home only and still says "Ubuntu OS will not support Wi-Fi 7" | [Wayback capture](https://web.archive.org/web/20261030161330/https://www.dell.com/en-us/shop/dell-laptops/spd/xps14da14260) |
 
 ## What the certification does and does not cover
 
@@ -64,6 +64,10 @@ The OEM kernel metapackage Dell's image installs, `linux-image-oem-24.04d`, now 
 ## Bottom line
 
 Dell sold this laptop with Ubuntu for a few months, certified it, and stopped offering it. The image it shipped can't decode video on its own GPU, can't detect headphones, and has no driver for its IR camera, and none of the updates available today fix any of that.
+
+## My question to Dell and Canonical
+
+What about this is "supported"? Did you give up?
 
 ## Reproduce
 
