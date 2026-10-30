@@ -10,6 +10,8 @@ This is what keeps ordinary people off Linux. They buy the laptop that says "cer
 
 Charging more for the Linux build of identical hardware looks like a way to extract extra money from people who refuse to pay Microsoft.
 
+Am I overreacting, or is this abuse?
+
 Everything below is either a dated link or the output of a command run on my XPS 14 on 2026-10-30. Raw outputs are in [evidence/](evidence/).
 
 ## Background: Dell used to stand behind Linux on the XPS
