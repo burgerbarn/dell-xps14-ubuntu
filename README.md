@@ -4,7 +4,7 @@ Dell announced an Ubuntu version of the 2026 XPS 14 (DA14260), sold it from June
 
 ## My take , I Guess I should've bought the Framework Pro
 
-I've run Red Hat since 1995 and owned hundreds of computers. I know what support looks like, and this isn't it. I bought this XPS because Dell sold it as a certified Ubuntu laptop. That purchase was misleading. That's my opinion; the rest of this page is the record.
+I bought this XPS because Dell sold it as a certified Ubuntu laptop. That purchase was misleading. That's my opinion; the rest of this page is the record.
 
 This is what keeps ordinary people off Linux. They buy the laptop that says "certified for Ubuntu", the basics break, and they blame Linux, not the vendor. Vendors count on Linux users to shrug and fix things ourselves. Holding them to what they sold is on us.
 
