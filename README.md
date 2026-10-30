@@ -4,9 +4,18 @@ Dell announced an Ubuntu version of the 2026 XPS 14 (DA14260), sold it from June
 
 ## My take
 
-I've owned hundreds of computers. I know when they are supported, and this one isn't. That's my opinion. The rest of this page is the record.
+I've owned hundreds of computers. I know when they are supported, and this one isn't. I bought this XPS because Dell sold it as a certified Ubuntu laptop. It was a misleading purchase. That's my opinion. The rest of this page is the record.
 
 Everything below is either a dated link or the output of a command run on my XPS 14 on 2026-10-30. Raw outputs are in [evidence/](evidence/).
+
+## Background: Dell used to stand behind Linux on the XPS
+
+- 2012-11-29: Dell ships the XPS 13 with Ubuntu 12.04 LTS, from its "Project Sputnik" effort, as a "developer edition" ([PCWorld](https://www.pcworld.com/article/455849/dell-ships-lightweight-xps-13-laptop-with-ubuntu-linux.html)).
+- 2018-07-27: the XPS 13 Developer Edition ships with Ubuntu 18.04 LTS pre-installed, which Dell calls its "seventh generation XPS 13 developer edition" ([Canonical](https://www.ubuntu.com/blog/dell-xps13-developer-edition-ships-with-ubuntu-18-04-lts-pre-installed)).
+- 2020: the XPS 13 developer edition ships with Ubuntu 20.04 LTS ([TechRadar](https://www.techradar.com/news/dell-xps-13-for-developers-comes-with-ubuntu-2004-lts-pre-loaded)).
+- 2020-09-28: Dell says Windows XPS 13 owners can move to its certified Ubuntu image even if they didn't buy Ubuntu, and that doing so "will not affect warranty or support conditions" ([GamingOnLinux](https://www.gamingonlinux.com/2020/09/dell-announce-new-xps-13-laptop-models-will-support-moving-from-windows-to-ubuntu/)).
+
+The 2026 XPS 14 got a few months.
 
 ## Timeline
 
