@@ -8,6 +8,8 @@ I've run Red Hat since 1995 and owned hundreds of computers. I know what support
 
 This is what keeps ordinary people off Linux. They buy the laptop that says "certified for Ubuntu", the basics break, and they blame Linux, not the vendor. Vendors count on Linux users to shrug and fix things ourselves. Holding them to what they sold is on us.
 
+Charging more for the Linux build of identical hardware looks like a way to extract extra money from people who refuse to pay Microsoft.
+
 Everything below is either a dated link or the output of a command run on my XPS 14 on 2026-10-30. Raw outputs are in [evidence/](evidence/).
 
 ## Background: Dell used to stand behind Linux on the XPS
