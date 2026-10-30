@@ -21,7 +21,11 @@ Everything below is either a dated link or the output of a command run on my XPS
 
 ## What the certification does and does not cover
 
-Canonical still runs automated regression tests on both certified configurations: the X7 358H one was last tested on 2026-09-22 (kernel 7.0.0-38-generic, BIOS 1.8.2), the Ultra 5 325 one on 2026-08-20 (6.17.0-1032-oem). Those tests pass. The hardware problems below are on the same model, on Dell's own image, so the tests evidently do not cover them.
+Canonical still runs automated regression tests on both certified configurations: the X7 358H one was last tested on 2026-09-22 (kernel 7.0.0-38-generic, BIOS 1.8.2), the Ultra 5 325 one on 2026-08-20 (6.17.0-1032-oem). The public pages give the test dates, not the results.
+
+Canonical's [24.04 desktop coverage guide](https://certification.canonical.com/docs/programmes/desktop/Desktop_Coverage_Guide_24.04/) lists what a certified laptop must pass. Among the blocking tests: sound output on "3.5mm headphones" and "3.5mm headset", and "Plug detection: when a new audio line input or output is plugged in the system, it needs to be recognized." Internal webcams are tested "to be able to take static pictures and video". Hardware video decode and IR cameras are not in the guide.
+
+The headphone jack below fails that plug-detection requirement. I tested it on the 7.0.0-42 kernel the image installs today, not on the 6.17.0-1011-oem kernel it was certified on.
 
 ## On Dell's own Ubuntu image, today
 
