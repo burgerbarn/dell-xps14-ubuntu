@@ -1,0 +1,70 @@
+# Dell XPS 14 (2026) with Ubuntu: sold, certified, then dropped
+
+Dell announced an Ubuntu version of the 2026 XPS 14 (DA14260), sold it from June 2026, and got two configurations certified by Canonical. By late October 2026 the Ubuntu option is gone from Dell's US store. On Dell's own Ubuntu image, basic hardware on this laptop still does not work.
+
+## My take
+
+I've owned hundreds of computers. I know when they are supported, and this one isn't. That's my opinion. The rest of this page is the record.
+
+Everything below is either a dated link or the output of a command run on my XPS 14 on 2026-10-30. Raw outputs are in [evidence/](evidence/).
+
+## Timeline
+
+| Date | What happened | Source |
+|---|---|---|
+| 2026-01-05 | Dell announces the new XPS 14 and 16; an Ubuntu version is "coming this year" | [OMG! Ubuntu](https://www.omgubuntu.co.uk/2026/01/new-dell-xps-2026-with-ubuntu) |
+| 2026-05-12 | Canonical certifies two DA14260 configurations for Ubuntu 24.04 LTS (kernel 6.17.0-1011-oem, BIOS 1.3.1) | [202511-38075](https://ubuntu.com/certified/202511-38075) (Core Ultra X7 358H), [202511-38076](https://ubuntu.com/certified/202511-38076) (Core Ultra 5 325) |
+| 2026-06-02 | XPS 14 goes on sale with Ubuntu 24.04 preinstalled, from $1,900, $100 less than Windows | [Liliputing](https://liliputing.com/dell-xps-14-laptop-is-now-available-with-ubuntu-linux/) |
+| 2026-06-19 | Dell's configuration page `useda14260ucto01`: Ubuntu 24.04 LTS is the default OS, Windows 11 Home is a +$100 option, $1,899.99 | [Wayback capture](https://web.archive.org/web/20260619204610/https://www.dell.com/en-us/shop/dell-laptops/new-xps-14-laptop/spd/xps-da14260-laptop/useda14260ucto01) |
+| 2026-08-20 | Same page still offers Ubuntu 24.04 LTS, $1,939.99 | [Wayback capture](https://web.archive.org/web/20260820153426/https://www.dell.com/en-us/shop/dell-laptops/new-xps-14-laptop/spd/xps-da14260-laptop/useda14260ucto01) |
+| 2026-10-30 | Same page: Windows 11 Home only, no Ubuntu anywhere in the OS options, $1,989.99 | [Live page](https://www.dell.com/en-us/shop/dell-laptops/new-xps-14-laptop/spd/xps-da14260-laptop/useda14260ucto01), extract: [evidence/dell-ucto01-2026-10-30.txt](evidence/dell-ucto01-2026-10-30.txt) |
+
+## What the certification does and does not cover
+
+Canonical still runs automated regression tests on both certified configurations: the X7 358H one was last tested on 2026-09-22 (kernel 7.0.0-38-generic, BIOS 1.8.2), the Ultra 5 325 one on 2026-08-20 (6.17.0-1032-oem). Those tests pass. The hardware problems below are on the same model, on Dell's own image, so the tests evidently do not cover them.
+
+## On Dell's own Ubuntu image, today
+
+Install: Dell's factory recovery image `XPS14DA14260_A00_Ubuntu2404_Recovery.iso`, then all updates. Dell's archives (`dell.archive.canonical.com noble somerville`, `somerville-hypno`) are active and nothing is pending. `fwupd` reports BIOS 1.12.0 and all device firmware as current.
+
+### Hardware video decode does not work
+
+The Intel media driver (VA-API) fails to initialise on the Panther Lake GPU:
+
+```
+libva: Trying to open /usr/lib/x86_64-linux-gnu/dri/iHD_drv_video.so
+libva: /usr/lib/x86_64-linux-gnu/dri/iHD_drv_video.so init failed
+```
+
+- Ubuntu 24.04 ships `intel-media-va-driver` 24.1.0. Intel's own Ubuntu 24.04 repository tops out at 25.2.4.
+- Intel's media-driver README first lists PTL (Panther Lake) in release 25.3. No package for Ubuntu 24.04 is that new, from Ubuntu, Dell or Intel.
+- Result: every native video player and ffmpeg decodes on the CPU. It works only in Flatpak apps, whose runtime ships media driver 26.3.5.
+
+### The headphone jack is never detected
+
+With headphones plugged in, every jack control on the cs42l45 codec stays `off`, so audio never switches to the headphones:
+
+```
+cs42l45 IT 31 Microphone Jack  : values=off
+cs42l45 IT 33 Headset Jack     : values=off
+cs42l45 OT 43 Headphone Jack   : values=off
+cs42l45 OT 45 Headset Jack     : values=off
+```
+
+The same thing happened on Fedora 44. The only workaround is to stop the UCM profile from reading the jack sensor, so you can pick the headphones by hand.
+
+### The IR (face login) camera has no driver
+
+The Himax HM1092 IR sensor is present in ACPI (`HIMX1092:00`) but no driver binds to it, and the kernel has no HM1092 module. There is no face login on Linux.
+
+### Dell's "OEM" kernel is now just the generic kernel
+
+The OEM kernel metapackage Dell's image installs, `linux-image-oem-24.04d`, now depends on `linux-image-generic-hwe-24.04`. The machine boots generic 7.0.0-42, not the 6.17 OEM kernel line the configurations were certified on.
+
+## Bottom line
+
+Dell sold this laptop with Ubuntu for a few months, certified it, and stopped offering it. The image it shipped can't decode video on its own GPU, can't detect headphones, and has no driver for its IR camera, and none of the updates available today fix any of that.
+
+## Reproduce
+
+Commands and full outputs: [evidence/xps-outputs.md](evidence/xps-outputs.md).

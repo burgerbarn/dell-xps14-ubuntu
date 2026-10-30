@@ -1,0 +1,9 @@
+URL: https://www.dell.com/en-us/shop/dell-laptops/new-xps-14-laptop/spd/xps-da14260-laptop/useda14260ucto01
+Fetched: 2026-10-30 (US store), full page SHA-256 1f5ebc3f41c21a43d5be5eb7d5a1264243d417dc57ea0592ed40c8370019c2b3
+
+Occurrences of the OS text "Ubuntu® Linux® 24.04 LTS": 0
+Operating system text found on the page:
+  Windows 11 Home 
+  Windows 11 Home, Copilot+ PC
+  Windows 11 Pro for business)
+Price field: "price":"1989.99"
