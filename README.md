@@ -18,6 +18,7 @@ Everything below is either a dated link or the output of a command run on my XPS
 | 2026-06-19 | Dell's configuration page `useda14260ucto01`: Ubuntu 24.04 LTS is the default OS, Windows 11 Home is a +$100 option, $1,899.99 | [Wayback capture](https://web.archive.org/web/20260619204610/https://www.dell.com/en-us/shop/dell-laptops/new-xps-14-laptop/spd/xps-da14260-laptop/useda14260ucto01) |
 | 2026-08-20 | Same page still offers Ubuntu 24.04 LTS, $1,939.99 | [Wayback capture](https://web.archive.org/web/20260820153426/https://www.dell.com/en-us/shop/dell-laptops/new-xps-14-laptop/spd/xps-da14260-laptop/useda14260ucto01) |
 | 2026-10-30 | Same page: Windows 11 Home only, no Ubuntu anywhere in the OS options, $1,989.99 | [Live page](https://www.dell.com/en-us/shop/dell-laptops/new-xps-14-laptop/spd/xps-da14260-laptop/useda14260ucto01), extract: [evidence/dell-ucto01-2026-10-30.txt](evidence/dell-ucto01-2026-10-30.txt). The Ubuntu configuration URL now redirects to the general XPS 14 page, which offers Windows 11 Home only and still says "Ubuntu OS will not support Wi-Fi 7" | [Wayback capture](https://web.archive.org/web/20261030161330/https://www.dell.com/en-us/shop/dell-laptops/spd/xps14da14260) |
+| 2026-10-30 | I report the failures to Canonical's certification team, asking whether this configuration passes plug detection and whether the certification still stands | [Launchpad question #825565](https://answers.launchpad.net/ubuntu-certification/+question/825565) |
 
 ## What the certification does and does not cover
 
