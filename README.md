@@ -1,6 +1,6 @@
-# Dell XPS 14 (2026) with Ubuntu: sold, certified, then dropped
+# Dell XPS 14 (2026) with Ubuntu: sold as certified, broken on Dell's own image
 
-Dell announced an Ubuntu version of the 2026 XPS 14 (DA14260), sold it from June 2026, and got two configurations certified by Canonical. By late October 2026 the Ubuntu option is gone from Dell's US store. On Dell's own Ubuntu image, basic hardware on this laptop still does not work.
+Dell announced an Ubuntu version of the 2026 XPS 14 (DA14260), sold it from June 2026, and got two configurations certified by Canonical. By late October 2026 Dell's Ubuntu-first listing is gone, but Ubuntu is still sold as an option on at least one configuration. On Dell's own Ubuntu image, basic hardware on this laptop still does not work.
 
 ## My take
 
@@ -17,7 +17,7 @@ Everything below is either a dated link or the output of a command run on my XPS
 - 2020: the XPS 13 developer edition ships with Ubuntu 20.04 LTS ([TechRadar](https://www.techradar.com/news/dell-xps-13-for-developers-comes-with-ubuntu-2004-lts-pre-loaded)).
 - 2020-09-28: Dell says Windows XPS 13 owners can move to its certified Ubuntu image even if they didn't buy Ubuntu, and that doing so "will not affect warranty or support conditions" ([GamingOnLinux](https://www.gamingonlinux.com/2020/09/dell-announce-new-xps-13-laptop-models-will-support-moving-from-windows-to-ubuntu/)).
 
-The 2026 XPS 14 got a few months.
+The 2026 XPS 14 got a few months as an Ubuntu-first listing, and is now sold with Ubuntu as a −$10 option behind a Windows default.
 
 ## Timeline
 
@@ -28,7 +28,8 @@ The 2026 XPS 14 got a few months.
 | 2026-06-02 | XPS 14 goes on sale with Ubuntu 24.04 preinstalled, from $1,900, $100 less than Windows | [Liliputing](https://liliputing.com/dell-xps-14-laptop-is-now-available-with-ubuntu-linux/) |
 | 2026-06-19 | Dell's configuration page `useda14260ucto01`: Ubuntu 24.04 LTS is the default OS, Windows 11 Home is a +$100 option, $1,899.99 | [Wayback capture](https://web.archive.org/web/20260619204610/https://www.dell.com/en-us/shop/dell-laptops/new-xps-14-laptop/spd/xps-da14260-laptop/useda14260ucto01) |
 | 2026-08-20 | Same page still offers Ubuntu 24.04 LTS, $1,939.99 | [Wayback capture](https://web.archive.org/web/20260820153426/https://www.dell.com/en-us/shop/dell-laptops/new-xps-14-laptop/spd/xps-da14260-laptop/useda14260ucto01) |
-| 2026-10-30 | Same page: Windows 11 Home only, no Ubuntu anywhere in the OS options, $1,989.99 | [Live page](https://www.dell.com/en-us/shop/dell-laptops/new-xps-14-laptop/spd/xps-da14260-laptop/useda14260ucto01), extract: [evidence/dell-ucto01-2026-10-30.txt](evidence/dell-ucto01-2026-10-30.txt). The Ubuntu configuration URL now redirects to the general XPS 14 page, which offers Windows 11 Home only and still says "Ubuntu OS will not support Wi-Fi 7" | [Wayback capture](https://web.archive.org/web/20261030161330/https://www.dell.com/en-us/shop/dell-laptops/spd/xps14da14260) |
+| 2026-10-30 | Same page: Windows 11 Home only, no Ubuntu in its OS options, $1,989.99 | [Live page](https://www.dell.com/en-us/shop/dell-laptops/new-xps-14-laptop/spd/xps-da14260-laptop/useda14260ucto01), extract: [evidence/dell-ucto01-2026-10-30.txt](evidence/dell-ucto01-2026-10-30.txt). The Ubuntu configuration URL now redirects to the general XPS 14 page, which offers Windows 11 Home only and still says "Ubuntu OS will not support Wi-Fi 7" | [Wayback capture](https://web.archive.org/web/20261030161330/https://www.dell.com/en-us/shop/dell-laptops/spd/xps14da14260) |
+| 2026-10-30 | Ubuntu is still for sale: on the `da14260_reg_01` configuration ($2,249.99 as configured), the Operating System options are Windows 11 Home (default), Windows 11 Pro (+$80) and Ubuntu Linux 24.04 LTS (−$10, available). No Wayback captures of this page exist, so I can't show whether this option was ever removed | [Live page](https://www.dell.com/en-us/shop/laptop-computers/spd/xps14da14260/da14260_reg_01), extract: [evidence/dell-reg01-2026-10-30.txt](evidence/dell-reg01-2026-10-30.txt) |
 | 2026-10-30 | I report the failures to Canonical's certification team, asking whether this configuration passes plug detection and whether the certification still stands | [Launchpad question #825565](https://answers.launchpad.net/ubuntu-certification/+question/825565) |
 | 2026-10-30 | I open a Dell support case with the same evidence, asking Dell to fix these on the certified Ubuntu image or state in writing that this configuration is not supported on Ubuntu | Awaiting Dell's reply |
 
@@ -80,7 +81,7 @@ The OEM kernel metapackage Dell's image installs, `linux-image-oem-24.04d`, now 
 
 ## Bottom line
 
-Dell sold this laptop with Ubuntu for a few months, certified it, and stopped offering it. The image it shipped can't decode video on its own GPU, can't detect headphones, and has no driver for its IR camera, and none of the updates available today fix any of that.
+Dell certified this laptop for Ubuntu and still sells it with Ubuntu. The image it ships can't decode video on its own GPU, can't detect headphones, and has no driver for its IR camera, and none of the updates available today fix any of that.
 
 ## My question to Dell and Canonical
 

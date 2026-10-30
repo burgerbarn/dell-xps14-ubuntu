@@ -1,0 +1,8 @@
+URL: https://www.dell.com/en-us/shop/laptop-computers/spd/xps14da14260/da14260_reg_01
+Fetched: 2026-10-30 (US store), full page SHA-256 d0930b7896ad08a388eca9b7d78e129613cd6d981d385534601bfb9a106853fe
+
+Operating System options on this configuration (as listed on the page):
+  Windows 11 Pro, Copilot+ PC. + $80.00 (available)
+  Windows 11 Home, Copilot+ PC. Selected (selected)
+  Ubuntu Linux 24.04 LTS. – $10.00 (available)
+Configuration price field: "price":"2249.99"
