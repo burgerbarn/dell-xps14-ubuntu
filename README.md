@@ -2,7 +2,7 @@
 
 Dell announced an Ubuntu version of the 2026 XPS 14 (DA14260), sold it from June 2026, and got two configurations certified by Canonical. By late October 2026 you cannot buy one pre-configured with Linux: every preset on Dell's XPS 14 page is Windows 11 Home, and Ubuntu is only available by custom-building, where it costs more than Windows. On Dell's own Ubuntu image, basic hardware on this laptop still does not work.
 
-## My take
+## My take , I Guess I should've bought the Framework Pro
 
 I've run Red Hat since 1995 and owned hundreds of computers. I know what support looks like, and this isn't it. I bought this XPS because Dell sold it as a certified Ubuntu laptop. That purchase was misleading. That's my opinion; the rest of this page is the record.
 
