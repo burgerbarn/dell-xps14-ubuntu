@@ -40,6 +40,7 @@ The 2026 XPS 14 got a few months as an Ubuntu-first listing, and is now sold wit
 | 2026-10-30 | I open a Dell support case with the same evidence, asking Dell to fix these on the certified Ubuntu image or state in writing that this configuration is not supported on Ubuntu | Dell case |
 | 2026-10-30 | Dell support replies: the unit shipped with Windows 11 Home, so the Ubuntu issues are "Out of Scope". Dell supports only the factory-installed OS and refers me to Canonical, even though Dell's support site lists "Ubuntu Recovery Image" (released 07 Oct 2026) under "This Device" for this same service tag, with the OS filter set to "Client Ubuntu 24.04". It does not say whether the same faults would be fixed on a unit sold with Ubuntu, which ships the same image | Dell case reply, with the agent name, service tag and case number removed. Support page: [screenshot](evidence/dell-support-ubuntu-image-for-my-tag-2026-10-30.png), service tag redacted |
 | 2026-10-30 | I send the findings to OMG! Ubuntu and Liliputing, who covered the Ubuntu launch | Tip forms, confirmed sent |
+| 2026-10-30 | I file a BBB complaint against Dell over the Ubuntu support claim and the $320 Ubuntu price difference | Awaiting Dell's response |
 
 ## What the certification does and does not cover
 
