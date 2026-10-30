@@ -36,6 +36,7 @@ The 2026 XPS 14 got a few months as an Ubuntu-first listing, and is now sold wit
 | 2026-10-30 | Dell's XPS 14 page lists three preset configurations: Ultra 5 325 ($1,989.99), X7 358H 2K non-touch ($2,619.99), X7 358H QHD+ touch ($3,149.99). All three are Windows 11 Home. None is sold with Ubuntu | [Live page](https://www.dell.com/en-us/shop/dell-laptops/spd/xps14da14260), [Wayback capture](https://web.archive.org/web/20261030161330/https://www.dell.com/en-us/shop/dell-laptops/spd/xps14da14260) |
 | 2026-10-30 | I report the failures to Canonical's certification team, asking whether this configuration passes plug detection and whether the certification still stands | [Launchpad question #825565](https://answers.launchpad.net/ubuntu-certification/+question/825565) |
 | 2026-10-30 | I open a Dell support case with the same evidence, asking Dell to fix these on the certified Ubuntu image or state in writing that this configuration is not supported on Ubuntu | Awaiting Dell's reply |
+| 2026-10-30 | I send the findings to OMG! Ubuntu and Liliputing, who covered the Ubuntu launch | Tip forms, confirmed sent |
 
 ## What the certification does and does not cover
 
